@@ -15,7 +15,7 @@ yarn add -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
 3、在生成的tailwind.config.js文件中，添加
-
+```js
 module.exports = {
   content: [
     "./index.html",
@@ -26,6 +26,8 @@ module.exports = {
   },
   plugins: [],
 }
+```
+
 4、在./src/index.css中添加（注意，该文件必须导入到main.tsx中）
 
 @tailwind base;
